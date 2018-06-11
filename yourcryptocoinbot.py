@@ -21,7 +21,7 @@ import templates
 from cryptocoinmarket import CryptoCoinMarket
 
 
-class YourCryptoCoinBot(object):
+class CryptoCoinBot(object):
 
     def __init__(self, token):
 
@@ -198,8 +198,8 @@ def main():
     logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                         level=logging.INFO)
     logger = logging.getLogger(__name__)
-    token = "YOUR-TOKEN"
-    crypto_coin_tbot = YourCryptoCoinBot(token) 
+    token = "534987830:AAE7U_W83yK32vICGmo4ep9fW7uAsRpDe8A"
+    crypto_coin_tbot = CryptoCoinBot(token) 
     crypto_coin_tbot.start_polling()
 
 

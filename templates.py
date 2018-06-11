@@ -12,7 +12,7 @@ import random
 
 class Texts(object):
 
-	START = "Hi, welcome to Your CryptoCoin Bot! I will help you to search" \
+	START = "Hi, welcome to CryptoCoin Bot! I will help you to search" \
 	        " information on cryptocurrency market capitalizations according to" \
 	        " coinmarketcap.com. Type /help for further information."
 
@@ -30,7 +30,7 @@ class Texts(object):
 
 	PRESS_BUTTON = "☝️ Tap one button to display some results:" \
 
-	NO_SUPPORTED = "🤔 Aparently, that name doesn't correspond to a supported cryptocurrency"
+	NO_SUPPORTED = "🤔 Aparently, that name doesn't correspond to a supported cryptocurrency (or doesn't appear in the CoinMarketCap's TOP 100)"
 
 	NO_LONGER_SUPPORTED = "🤷‍♂️ [UPDATE] Sorry. Aparently, this cryptocurrency is no longer supported."
 
@@ -49,7 +49,7 @@ class LabelButtons(object):
 def create_top_list(results, **kwargs):
     """Returns a top list of crypto currency capitalizations."""
 
-    html = "ℹ️ <b>Crypto Currency Capitalizations</b>"
+    html = "ℹ️ <b>Cryptocurrencies Capitalizations</b>"
     html += "\nTOP %s:" % kwargs.get("top", len(results))
     for i, result in enumerate(results):
         html += "\n" if i % 10 == 0 else ""
